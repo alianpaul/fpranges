@@ -1,0 +1,20 @@
+* FP ranges with different exponent and mantissa bits
+** 8 bits
+| FP   | min denorm | max denorm | min norm | max norm |
+| e3m4 |   1.56e-02 |   2.34e-01 | 2.50e-01 | 1.55e+01 |
+| e4m3 |   1.95e-03 |   1.37e-02 | 1.56e-02 | 2.40e+02 |
+| e5m2 |   1.53e-05 |   4.58e-05 | 6.10e-05 | 5.73e+04 |
+| e6m1 |   4.66e-10 |   4.66e-10 | 9.31e-10 | 3.22e+09 |
+** 16 bits
+| FP    | min denorm | max denorm | min norm | max norm |
+| e5m10 |   5.96e-08 |   6.10e-05 | 6.10e-05 | 6.55e+04 |
+| e6m9  |   1.82e-12 |   9.30e-10 | 9.31e-10 | 4.29e+09 |
+| e7m8  |   8.47e-22 |   2.16e-19 | 2.17e-19 | 1.84e+19 |
+| e8m7  |   9.18e-41 |   1.17e-38 | 1.18e-38 | 3.39e+38 |
+** IEEE 754 fp16, IEEE 754 fp32, bfloat
+| FP                   | min denorm | max denorm | min norm | max norm |
+| IEEE 754 fp16(e5m10) |   5.96e-08 |   6.10e-05 | 6.10e-05 | 6.55e+04 |
+| IEEE 754 fp32(e8m23) |   1.40e-45 |   1.18e-38 | 1.18e-38 | 3.40e+38 |
+| bfloat       (e8m7)  |   9.18e-41 |   1.17e-38 | 1.18e-38 | 3.39e+38 |
+
+
